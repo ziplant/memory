@@ -128,7 +128,7 @@ export default new Vuex.Store({
                 board[index].id = index + 1;
                 board[index].name = deck[el];
                 board[index].image = new Image();
-                board[index].image.src = `/img/deck/${deck[el]}.png`;
+                board[index].image.src = require(`@/assets/images/deck/${deck[el]}.png`);
                 board[index].image.alt = deck[el];
                 board[index].hidden = false;
                 board[index].completed = false;
